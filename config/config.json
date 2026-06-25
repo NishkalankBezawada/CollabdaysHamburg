@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "spfx-vitest-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/spfxVitest/SpfxVitestWebPart.js",
+          "manifest": "./src/webparts/spfxVitest/SpfxVitestWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SpfxVitestWebPartStrings": "lib/webparts/spfxVitest/loc/{locale}.js"
+  }
+}

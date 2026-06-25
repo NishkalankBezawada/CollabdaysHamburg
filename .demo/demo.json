@@ -1,0 +1,727 @@
+{
+  "$schema": "https://demotime.show/demo-time.schema.json",
+  "title": "Level Up SPFx Projects with Vitest Unit Testing",
+  "description": "A guided demo showing how to add Vitest unit testing to an SPFx project, then automate the setup with GitHub Copilot.",
+  "version": 2,
+  "demos": [
+    {
+      "title": "Intro",
+      "description": "Display the opening slide.",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/00-start.md"
+        }
+      ]
+    },
+    {
+      "title": "About Me",
+      "description": "Speaker introduction with photo and company logo.",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/00b-about-me.md"
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/00b-about-me-notes.md"
+      }
+    },
+    {
+      "title": "Agenda",
+      "description": "Show a slide to outline the agenda.",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/01-agenda.md"
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/01-intro-notes.md"
+      }
+    },
+    {
+      "title": "What is Vitest",
+      "description": "Quick overview of Vitest.",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/02-what-is-vitest.md"
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/02-what-is-vitest-notes.md"
+      }
+    },
+    {
+      "title": "Vitest Features",
+      "description": "Highlight Vitest features.",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/03-vitest-features.md"
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/03-vitest-features-notes.md"
+      }
+    },
+    {
+      "title": "Vitest Setup and Configurations",
+      "description": "Setup and configuration overview.",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/04-setup-and-configurations.md"
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/03-setup-overview-notes.md"
+      }
+    },
+    {
+      "title": "Vitest - NPM Packages",
+      "description": "Highlight the devDependencies in package.json.",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "package.json",
+          "position": "43:51",
+          "zoom": 3,
+          "highlightWholeLine": true
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/05-vitest-npm-packages-notes.md"
+      }
+    },
+    {
+      "title": "Vitest - Test Commands",
+      "description": "Highlight the test scripts in package.json.",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "package.json",
+          "position": "13:14",
+          "zoom": 3,
+          "highlightWholeLine": false
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/06-test-command-notes.md"
+      }
+    },
+    {
+      "title": "vitest.config.ts - Full Overview",
+      "description": "Show the entire vitest.config.ts file.",
+      "steps": [
+        {
+          "action": "highlight",
+          "position": "1:33",
+          "highlightWholeLine": true,
+          "path": "vitest.config.ts",
+          "zoom": 3
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/08a-vitest-config-overview-notes.md"
+      }
+    },
+    {
+      "title": "vitest.config.ts - Plugins",
+      "description": "Highlight the plugins configuration (react + tsconfigPaths).",
+      "steps": [
+        {
+          "action": "selection",
+          "path": "vitest.config.ts",
+          "position": "6:6",
+          "highlightWholeLine": true
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/08b-vitest-config-plugins-notes.md"
+      }
+    },
+    {
+      "title": "vitest.config.ts - Test Environment",
+      "description": "Highlight globals, environment, and setupFiles.",
+      "steps": [
+        {
+          "action": "selection",
+          "path": "vitest.config.ts",
+          "position": "8:10",
+          "highlightWholeLine": true
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/08c-vitest-config-environment-notes.md"
+      }
+    },
+    {
+      "title": "vitest.config.ts - Coverage",
+      "description": "Highlight the coverage configuration block.",
+      "steps": [
+        {
+          "action": "selection",
+          "position": "11:20",
+          "highlightWholeLine": true,
+          "path": "vitest.config.ts"
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/08d-vitest-config-coverage-notes.md"
+      }
+    },
+    {
+      "title": "vitest.config.ts - Path Aliases",
+      "description": "Highlight the path alias configuration.",
+      "steps": [
+        {
+          "action": "selection",
+          "path": "vitest.config.ts",
+          "position": "24:26",
+          "highlightWholeLine": true
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/08e-vitest-config-aliases-notes.md"
+      }
+    },
+    {
+      "title": "vitest.config.ts - Reporters",
+      "description": "Highlight the reporters and output configuration.",
+      "steps": [
+        {
+          "action": "selection",
+          "path": "vitest.config.ts",
+          "position": "28:28",
+          "highlightWholeLine": true
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/08f-vitest-config-reporters-notes.md"
+      }
+    },
+    {
+      "title": "Vitest - setupTests.ts",
+      "description": "Highlight the test setup file.",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "tests/setupTests.ts",
+          "position": "1:9",
+          "zoom": 3
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/09-setupTests-notes.md"
+      }
+    },
+    {
+      "title": "Atom Test - render()",
+      "description": "Show how render() puts a component on a fake page.",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "tests/components/atoms/SpfxVitest.test.tsx",
+          "position": "1:70",
+          "zoom": 3
+        },
+        {
+          "action": "selection",
+          "path": "tests/components/atoms/SpfxVitest.test.tsx",
+          "position": "26:26",
+          "highlightWholeLine": true
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/10a-atom-render-notes.md"
+      }
+    },
+    {
+      "title": "Atom Test - screen.getByText()",
+      "description": "Show how screen.getByText finds elements by visible text.",
+      "steps": [
+        {
+          "action": "selection",
+          "path": "tests/components/atoms/SpfxVitest.test.tsx",
+          "position": "27:29",
+          "highlightWholeLine": true
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/10b-atom-getByText-notes.md"
+      }
+    },
+    {
+      "title": "Atom Test - screen.getByRole()",
+      "description": "Show how screen.getByRole finds elements by accessibility role.",
+      "steps": [
+        {
+          "action": "selection",
+          "path": "tests/components/atoms/SpfxVitest.test.tsx",
+          "position": "43:44",
+          "highlightWholeLine": true
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/10c-atom-getByRole-notes.md"
+      }
+    },
+    {
+      "title": "Atom Test - expect().toBeInTheDocument()",
+      "description": "Show how expect checks if something is on the page.",
+      "steps": [
+        {
+          "action": "selection",
+          "path": "tests/components/atoms/SpfxVitest.test.tsx",
+          "position": "36:36",
+          "highlightWholeLine": true
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/10d-atom-expect-notes.md"
+      }
+    },
+    {
+      "title": "Atom Test - console.log()",
+      "description": "Show how logging helps trace test execution.",
+      "steps": [
+        {
+          "action": "selection",
+          "path": "tests/components/atoms/SpfxVitest.test.tsx",
+          "position": "15:16",
+          "highlightWholeLine": true
+        },
+        {
+          "action": "selection",
+          "path": "tests/components/atoms/SpfxVitest.test.tsx",
+          "position": "25:25",
+          "highlightWholeLine": true
+        },
+        {
+          "action": "selection",
+          "path": "tests/components/atoms/SpfxVitest.test.tsx",
+          "position": "30:30",
+          "highlightWholeLine": true
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/10e-atom-logging-notes.md"
+      }
+    },
+    {
+      "title": "Molecule Test - render()",
+      "description": "Show render() with props in the SearchBox test.",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "tests/components/molecules/SearchBox.test.tsx",
+          "position": "1:110",
+          "zoom": 3
+        },
+        {
+          "action": "selection",
+          "path": "tests/components/molecules/SearchBox.test.tsx",
+          "position": "23:23",
+          "highlightWholeLine": true
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/10f-molecule-render-notes.md"
+      }
+    },
+    {
+      "title": "Molecule Test - screen.getByRole() & getByLabelText()",
+      "description": "Show querying by role and label in SearchBox.",
+      "steps": [
+        {
+          "action": "selection",
+          "path": "tests/components/molecules/SearchBox.test.tsx",
+          "position": "25:25",
+          "highlightWholeLine": true
+        },
+        {
+          "action": "selection",
+          "path": "tests/components/molecules/SearchBox.test.tsx",
+          "position": "41:41",
+          "highlightWholeLine": true
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/10g-molecule-queries-notes.md"
+      }
+    },
+    {
+      "title": "Molecule Test - fireEvent",
+      "description": "Show how fireEvent simulates user interactions.",
+      "steps": [
+        {
+          "action": "selection",
+          "path": "tests/components/molecules/SearchBox.test.tsx",
+          "position": "42:43",
+          "highlightWholeLine": true
+        },
+        {
+          "action": "selection",
+          "path": "tests/components/molecules/SearchBox.test.tsx",
+          "position": "54:55",
+          "highlightWholeLine": true
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/10h-molecule-fireEvent-notes.md"
+      }
+    },
+    {
+      "title": "Molecule Test - expect() assertions",
+      "description": "Show expect with toHaveBeenCalledWith and toBeDisabled.",
+      "steps": [
+        {
+          "action": "selection",
+          "path": "tests/components/molecules/SearchBox.test.tsx",
+          "position": "57:58",
+          "highlightWholeLine": true
+        },
+        {
+          "action": "selection",
+          "path": "tests/components/molecules/SearchBox.test.tsx",
+          "position": "95:96",
+          "highlightWholeLine": true
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/10i-molecule-expect-notes.md"
+      }
+    },
+    {
+      "title": "Molecule Test - console.log()",
+      "description": "Show logging pattern in molecule tests.",
+      "steps": [
+        {
+          "action": "selection",
+          "path": "tests/components/molecules/SearchBox.test.tsx",
+          "position": "12:13",
+          "highlightWholeLine": true
+        },
+        {
+          "action": "selection",
+          "path": "tests/components/molecules/SearchBox.test.tsx",
+          "position": "22:22",
+          "highlightWholeLine": true
+        },
+        {
+          "action": "selection",
+          "path": "tests/components/molecules/SearchBox.test.tsx",
+          "position": "27:27",
+          "highlightWholeLine": true
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/10j-molecule-logging-notes.md"
+      }
+    },
+    {
+      "title": "Organism Test - render()",
+      "description": "Show render() in the UserProfileCard test.",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "tests/components/organisms/UserProfileCard.test.tsx",
+          "position": "1:135",
+          "zoom": 3
+        },
+        {
+          "action": "selection",
+          "path": "tests/components/organisms/UserProfileCard.test.tsx",
+          "position": "26:26",
+          "highlightWholeLine": true
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/10k-organism-render-notes.md"
+      }
+    },
+    {
+      "title": "Organism Test - screen.getByText() & getByLabelText()",
+      "description": "Show text and label queries in organism test.",
+      "steps": [
+        {
+          "action": "selection",
+          "path": "tests/components/organisms/UserProfileCard.test.tsx",
+          "position": "27:27",
+          "highlightWholeLine": true
+        },
+        {
+          "action": "selection",
+          "path": "tests/components/organisms/UserProfileCard.test.tsx",
+          "position": "49:50",
+          "highlightWholeLine": true
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/10l-organism-queries-notes.md"
+      }
+    },
+    {
+      "title": "Organism Test - screen.getByRole() & getByTestId()",
+      "description": "Show role and testid queries in organism test.",
+      "steps": [
+        {
+          "action": "selection",
+          "path": "tests/components/organisms/UserProfileCard.test.tsx",
+          "position": "82:82",
+          "highlightWholeLine": true
+        },
+        {
+          "action": "selection",
+          "path": "tests/components/organisms/UserProfileCard.test.tsx",
+          "position": "131:131",
+          "highlightWholeLine": true
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/10m-organism-getByRole-notes.md"
+      }
+    },
+    {
+      "title": "Organism Test - fireEvent interactions",
+      "description": "Show fireEvent simulating search interactions.",
+      "steps": [
+        {
+          "action": "selection",
+          "path": "tests/components/organisms/UserProfileCard.test.tsx",
+          "position": "89:90",
+          "highlightWholeLine": true
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/10n-organism-fireEvent-notes.md"
+      }
+    },
+    {
+      "title": "Organism Test - expect() assertions",
+      "description": "Show various expect assertions in organism test.",
+      "steps": [
+        {
+          "action": "selection",
+          "path": "tests/components/organisms/UserProfileCard.test.tsx",
+          "position": "92:94",
+          "highlightWholeLine": true
+        },
+        {
+          "action": "selection",
+          "path": "tests/components/organisms/UserProfileCard.test.tsx",
+          "position": "122:123",
+          "highlightWholeLine": true
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/10o-organism-expect-notes.md"
+      }
+    },
+    {
+      "title": "Organism Test - console.log()",
+      "description": "Show logging in organism tests.",
+      "steps": [
+        {
+          "action": "selection",
+          "path": "tests/components/organisms/UserProfileCard.test.tsx",
+          "position": "14:15",
+          "highlightWholeLine": true
+        },
+        {
+          "action": "selection",
+          "path": "tests/components/organisms/UserProfileCard.test.tsx",
+          "position": "25:25",
+          "highlightWholeLine": true
+        },
+        {
+          "action": "selection",
+          "path": "tests/components/organisms/UserProfileCard.test.tsx",
+          "position": "28:28",
+          "highlightWholeLine": true
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/10p-organism-logging-notes.md"
+      }
+    },
+    {
+      "title": "Demo - Run Tests in Terminal",
+      "description": "Run the test command in the terminal.",
+      "steps": [
+        {
+          "action": "openTerminal",
+          "terminalId": "run-tests"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "npm run test",
+          "insertTypingSpeed": 0,
+          "insertTypingMode": "character-by-character",
+          "terminalId": "run-tests"
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/13-demo-run-tests-terminal-notes.md"
+      }
+    },
+    {
+      "title": "Demo - Run Tests in UI",
+      "description": "Run the test UI command in the terminal.",
+      "steps": [
+        {
+          "action": "openTerminal",
+          "terminalId": "run-tests"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "npm run test:local",
+          "insertTypingSpeed": 0,
+          "insertTypingMode": "character-by-character",
+          "terminalId": "run-tests"
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/14-demo-run-tests-ui-notes.md"
+      }
+    },
+    {
+      "title": "Recap - Manual Configurations",
+      "description": "Recap the manual Vitest setup steps.",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/05-recap-vitest-configurations.md"
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/11-recap-vitest-configurations-notes.md"
+      }
+    },
+    {
+      "title": "Reverse Engineering - GitHub Copilot Prompt",
+      "description": "Show the Copilot prompt for automating the setup.",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/06-reverse-engineering.md"
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/06-reverse-engineering-notes.md"
+      }
+    },
+    {
+      "title": "Automation with Copilot",
+      "description": "Show the automation slide.",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/07-automation-demo.md"
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/07-automation-demo-notes.md"
+      }
+    },
+    {
+      "title": "Demo - Run a Prompt to generate Vitest Configurations prompt file",
+      "description": "Ask Copilot to generate a Vitest configuration prompt file.",
+      "steps": [
+        {
+          "action": "agentCopilotChat",
+          "message": "I need to configure **Vitest** for a new **SharePoint Framework (SPFx)** project to enable unit testing. The goal is to set up Vitest unit testing\n\nPlease generate the following required changes for my SPFx solution in a markdown file\n\n1.  **package.json update:** List all necessary development dependencies (e.g., `vitest`, testing utilities, environment setup) that need to be added.\n2.  **tsconfig.json update:** Generate the necessary additions to the `types` array and configuration to ensure proper TypeScript support and intellisense with Vitest.\n3.  **vitest.config.ts file:** Generate the complete content for the new `vitest.config.ts` file, ensuring it handles common SPFx project requirements (e.g., environment, test paths, dependency management).\n4.  **tests/SetupTests.ts file:** Generate the complete content for the new `tests/SetupTests.ts` file, configured for global testing setup in the SPFx environment.\n5. Extract the configuration in markdown formated file."
+        }
+      ]
+    },
+    {
+      "title": "Demo - Close the previous prompt and Copilot Chat",
+      "description": "Close the Copilot chat panel.",
+      "steps": [
+        {
+          "action": "closeCopilotChat"
+        }
+      ]
+    },
+    {
+      "title": "Demo - Add a prompt file",
+      "description": "Add a prompt file to the GitHub prompts folder.",
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.chat.run.prompt",
+          "args": "Adding a prompt file to github prompts folder"
+        }
+      ]
+    },
+    {
+      "title": "Highlight Configure Vitest Prompt File",
+      "description": "Highlight the Vitest prompt file contents.",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": ".github/prompts/setup-configure-vitest.prompt.md",
+          "position": "1:355",
+          "zoom": 3
+        }
+      ]
+    },
+    {
+      "title": "Demo - Run prompt - vitest setup configure prompt",
+      "description": "Run the Vitest setup prompt in Copilot Chat.",
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.chat.attachFile",
+          "args": "{\nsetup-configure-vitest.prompt.md\n}"
+        },
+        {
+          "action": "askCopilotChat",
+          "message": "Follow instructions in setup-configure-vitest.prompt.md"
+        }
+      ]
+    },
+    {
+      "title": "Demo - Run agent - vitest setup configure agent",
+      "description": "Invoke the VitestExpert agent in Copilot Chat.",
+      "steps": [
+        {
+          "action": "askCopilotChat"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.chat.assignSelectedAgent",
+          "args": "VitestExpert\n"
+        }
+      ]
+    },
+    {
+      "title": "Recap - Core Concepts",
+      "description": "Final recap of all core concepts.",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/08-recap.md"
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/08-recap-notes.md"
+      }
+    },
+    {
+      "title": "Links & Thank You",
+      "description": "Show links and closing slide.",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/09-links.md"
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/12-thank-you-notes.md"
+      }
+    }
+  ]
+}
