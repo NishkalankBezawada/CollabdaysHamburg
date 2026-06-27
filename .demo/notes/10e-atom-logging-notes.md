@@ -10,14 +10,14 @@ beforeAll(() => {
 it("renders user display name", () => {
     console.log("  → Testing: Does it show the user's name?");
     // ... test code ...
-    console.log("  ✓ User name rendered correctly");
+    console.log(" User name rendered correctly");
 });
 ```
 
 ### Why we add logging:
 - "During demos, you can see the test 'thinking' step by step in the terminal output."
 - "It tells a story: what are we testing? Did it pass?"
-- "The emoji markers (🧪 → ✓ ✅) make it easy to scan the output quickly."
+- "The emoji markers (🧪 →✅) make it easy to scan the output quickly."
 
 ### The pattern:
 - `beforeAll` — Announces which test suite is starting

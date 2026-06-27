@@ -23,7 +23,7 @@ describe("SearchBox component (Molecule)", () => {
     render(<SearchBox onSearch={mockOnSearch} />);
     expect(screen.getByPlaceholderText("Search...")).toBeInTheDocument();
     expect(screen.getByRole("button", { name: "Search" })).toBeInTheDocument();
-    console.log("  ✓ Default placeholder and button text rendered");
+    console.log(" Default placeholder and button text rendered");
   });
 
   it("renders with custom placeholder and button label", () => {
@@ -31,7 +31,7 @@ describe("SearchBox component (Molecule)", () => {
     render(<SearchBox onSearch={mockOnSearch} placeholder="Find items..." buttonLabel="Go" />);
     expect(screen.getByPlaceholderText("Find items...")).toBeInTheDocument();
     expect(screen.getByRole("button", { name: "Go" })).toBeInTheDocument();
-    console.log("  ✓ Custom placeholder 'Find items...' and button 'Go' rendered");
+    console.log(" Custom placeholder 'Find items...' and button 'Go' rendered");
   });
 
   it("updates input value when user types", () => {
@@ -40,7 +40,7 @@ describe("SearchBox component (Molecule)", () => {
     const input = screen.getByLabelText("Search input");
     fireEvent.change(input, { target: { value: "hello world" } });
     expect(input).toHaveValue("hello world");
-    console.log("  ✓ Input value updated to 'hello world' after typing");
+    console.log(" Input value updated to 'hello world' after typing");
   });
 
   it("calls onSearch when button is clicked with valid input", () => {
@@ -54,7 +54,7 @@ describe("SearchBox component (Molecule)", () => {
 
     expect(mockOnSearch).toHaveBeenCalledWith("SharePoint");
     expect(mockOnSearch).toHaveBeenCalledTimes(1);
-    console.log("  ✓ onSearch called with 'SharePoint' after button click");
+    console.log(" onSearch called with 'SharePoint' after button click");
   });
 
   it("calls onSearch when Enter key is pressed", () => {
@@ -66,7 +66,7 @@ describe("SearchBox component (Molecule)", () => {
     fireEvent.keyPress(input, { key: "Enter", charCode: 13 });
 
     expect(mockOnSearch).toHaveBeenCalledWith("Vitest");
-    console.log("  ✓ onSearch called with 'Vitest' after Enter key press");
+    console.log(" onSearch called with 'Vitest' after Enter key press");
   });
 
   it("does NOT call onSearch when input is empty", () => {
@@ -77,7 +77,7 @@ describe("SearchBox component (Molecule)", () => {
     fireEvent.click(button);
 
     expect(mockOnSearch).not.toHaveBeenCalled();
-    console.log("  ✓ onSearch NOT called — empty input correctly blocked");
+    console.log(" onSearch NOT called — empty input correctly blocked");
   });
 
   it("trims whitespace from search query", () => {
@@ -89,7 +89,7 @@ describe("SearchBox component (Molecule)", () => {
     fireEvent.keyPress(input, { key: "Enter", charCode: 13 });
 
     expect(mockOnSearch).toHaveBeenCalledWith("SPFx Testing");
-    console.log("  ✓ Search query trimmed from '  SPFx Testing  ' to 'SPFx Testing'");
+    console.log(" Search query trimmed from '  SPFx Testing  ' to 'SPFx Testing'");
   });
 
   it("disables input and button when disabled prop is true", () => {
@@ -100,7 +100,7 @@ describe("SearchBox component (Molecule)", () => {
 
     expect(input).toBeDisabled();
     expect(button).toBeDisabled();
-    console.log("  ✓ Both input and button are disabled");
+    console.log(" Both input and button are disabled");
   });
 
   it("shows search count after performing searches", () => {
@@ -113,6 +113,6 @@ describe("SearchBox component (Molecule)", () => {
     fireEvent.click(button);
 
     expect(screen.getByText("Searches performed: 1")).toBeInTheDocument();
-    console.log("  ✓ Search count shows '1' after first search");
+    console.log(" Search count shows '1' after first search");
   });
 });

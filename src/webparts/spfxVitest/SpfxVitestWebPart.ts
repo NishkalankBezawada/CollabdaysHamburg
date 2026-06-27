@@ -11,6 +11,10 @@ import { IReadonlyTheme } from '@microsoft/sp-component-base';
 import * as strings from 'SpfxVitestWebPartStrings';
 import SpfxVitest from './components/atoms/SpfxVitest';
 import { ISpfxVitestProps } from './components/atoms/ISpfxVitestProps';
+import SearchBox from './components/molecules/SearchBox';
+import { ISearchBoxProps } from './components/molecules/ISearchBoxProps';
+import UserProfileCard from './components/organisms/UserProfileCard';
+import { IUserProfileCardProps } from './components/organisms/IUserProfileCardProps';
 
 export interface ISpfxVitestWebPartProps {
   description: string;
@@ -22,7 +26,7 @@ export default class SpfxVitestWebPart extends BaseClientSideWebPart<ISpfxVitest
   private _environmentMessage: string = '';
 
   public render(): void {
-    const element: React.ReactElement<ISpfxVitestProps> = React.createElement(
+    const spfxVitestElement: React.ReactElement<ISpfxVitestProps> = React.createElement(
       SpfxVitest,
       {
         description: this.properties.description,
@@ -31,6 +35,38 @@ export default class SpfxVitestWebPart extends BaseClientSideWebPart<ISpfxVitest
         hasTeamsContext: !!this.context.sdks.microsoftTeams,
         userDisplayName: this.context.pageContext.user.displayName
       }
+    );
+
+    const searchBoxElement: React.ReactElement<ISearchBoxProps> = React.createElement(
+      SearchBox,
+      {
+        placeholder: 'Search...',
+        onSearch: (query: string) => { console.log('Search query:', query); }
+      }
+    );
+
+    const userProfileCardElement: React.ReactElement<IUserProfileCardProps> = React.createElement(
+      UserProfileCard,
+      {
+        displayName: this.context.pageContext.user.displayName,
+        email: this.context.pageContext.user.email,
+        role: 'Member',
+        isOnline: true,
+        recentSearches: [],
+        onSearch: (query: string) => { console.log('Profile search:', query); }
+      }
+    );
+
+    const separator: React.ReactElement = React.createElement('hr', { style: { margin: '20px 0', border: 'none', borderTop: '1px solid #ccc' } });
+
+    const element: React.ReactElement = React.createElement(
+      React.Fragment,
+      null,
+      spfxVitestElement,
+      separator,
+      searchBoxElement,
+      React.createElement('hr', { style: { margin: '20px 0', border: 'none', borderTop: '1px solid #ccc' } }),
+      userProfileCardElement
     );
 
     ReactDom.render(element, this.domElement);
