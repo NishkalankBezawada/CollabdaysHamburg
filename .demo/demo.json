@@ -222,15 +222,9 @@
       "description": "Show how render() puts a component on a fake page.",
       "steps": [
         {
-          "action": "highlight",
-          "path": "tests/components/atoms/SpfxVitest.test.tsx",
-          "position": "1:70",
-          "zoom": 3
-        },
-        {
           "action": "selection",
           "path": "tests/components/atoms/SpfxVitest.test.tsx",
-          "position": "26:26",
+          "position": "25:25",
           "highlightWholeLine": true
         }
       ],
@@ -245,7 +239,7 @@
         {
           "action": "selection",
           "path": "tests/components/atoms/SpfxVitest.test.tsx",
-          "position": "27:29",
+          "position": "26:28",
           "highlightWholeLine": true
         }
       ],
@@ -260,7 +254,7 @@
         {
           "action": "selection",
           "path": "tests/components/atoms/SpfxVitest.test.tsx",
-          "position": "43:44",
+          "position": "50:50",
           "highlightWholeLine": true
         }
       ],
@@ -275,7 +269,7 @@
         {
           "action": "selection",
           "path": "tests/components/atoms/SpfxVitest.test.tsx",
-          "position": "36:36",
+          "position": "26:28",
           "highlightWholeLine": true
         }
       ],
@@ -292,259 +286,10 @@
           "path": "tests/components/atoms/SpfxVitest.test.tsx",
           "position": "15:16",
           "highlightWholeLine": true
-        },
-        {
-          "action": "selection",
-          "path": "tests/components/atoms/SpfxVitest.test.tsx",
-          "position": "25:25",
-          "highlightWholeLine": true
-        },
-        {
-          "action": "selection",
-          "path": "tests/components/atoms/SpfxVitest.test.tsx",
-          "position": "30:30",
-          "highlightWholeLine": true
         }
       ],
       "notes": {
         "path": ".demo/notes/10e-atom-logging-notes.md"
-      }
-    },
-    {
-      "title": "Molecule Test - render()",
-      "description": "Show render() with props in the SearchBox test.",
-      "steps": [
-        {
-          "action": "highlight",
-          "path": "tests/components/molecules/SearchBox.test.tsx",
-          "position": "1:110",
-          "zoom": 3
-        },
-        {
-          "action": "selection",
-          "path": "tests/components/molecules/SearchBox.test.tsx",
-          "position": "23:23",
-          "highlightWholeLine": true
-        }
-      ],
-      "notes": {
-        "path": ".demo/notes/10f-molecule-render-notes.md"
-      }
-    },
-    {
-      "title": "Molecule Test - screen.getByRole() & getByLabelText()",
-      "description": "Show querying by role and label in SearchBox.",
-      "steps": [
-        {
-          "action": "selection",
-          "path": "tests/components/molecules/SearchBox.test.tsx",
-          "position": "25:25",
-          "highlightWholeLine": true
-        },
-        {
-          "action": "selection",
-          "path": "tests/components/molecules/SearchBox.test.tsx",
-          "position": "41:41",
-          "highlightWholeLine": true
-        }
-      ],
-      "notes": {
-        "path": ".demo/notes/10g-molecule-queries-notes.md"
-      }
-    },
-    {
-      "title": "Molecule Test - fireEvent",
-      "description": "Show how fireEvent simulates user interactions.",
-      "steps": [
-        {
-          "action": "selection",
-          "path": "tests/components/molecules/SearchBox.test.tsx",
-          "position": "42:43",
-          "highlightWholeLine": true
-        },
-        {
-          "action": "selection",
-          "path": "tests/components/molecules/SearchBox.test.tsx",
-          "position": "54:55",
-          "highlightWholeLine": true
-        }
-      ],
-      "notes": {
-        "path": ".demo/notes/10h-molecule-fireEvent-notes.md"
-      }
-    },
-    {
-      "title": "Molecule Test - expect() assertions",
-      "description": "Show expect with toHaveBeenCalledWith and toBeDisabled.",
-      "steps": [
-        {
-          "action": "selection",
-          "path": "tests/components/molecules/SearchBox.test.tsx",
-          "position": "57:58",
-          "highlightWholeLine": true
-        },
-        {
-          "action": "selection",
-          "path": "tests/components/molecules/SearchBox.test.tsx",
-          "position": "95:96",
-          "highlightWholeLine": true
-        }
-      ],
-      "notes": {
-        "path": ".demo/notes/10i-molecule-expect-notes.md"
-      }
-    },
-    {
-      "title": "Molecule Test - console.log()",
-      "description": "Show logging pattern in molecule tests.",
-      "steps": [
-        {
-          "action": "selection",
-          "path": "tests/components/molecules/SearchBox.test.tsx",
-          "position": "12:13",
-          "highlightWholeLine": true
-        },
-        {
-          "action": "selection",
-          "path": "tests/components/molecules/SearchBox.test.tsx",
-          "position": "22:22",
-          "highlightWholeLine": true
-        },
-        {
-          "action": "selection",
-          "path": "tests/components/molecules/SearchBox.test.tsx",
-          "position": "27:27",
-          "highlightWholeLine": true
-        }
-      ],
-      "notes": {
-        "path": ".demo/notes/10j-molecule-logging-notes.md"
-      }
-    },
-    {
-      "title": "Organism Test - render()",
-      "description": "Show render() in the UserProfileCard test.",
-      "steps": [
-        {
-          "action": "highlight",
-          "path": "tests/components/organisms/UserProfileCard.test.tsx",
-          "position": "1:135",
-          "zoom": 3
-        },
-        {
-          "action": "selection",
-          "path": "tests/components/organisms/UserProfileCard.test.tsx",
-          "position": "26:26",
-          "highlightWholeLine": true
-        }
-      ],
-      "notes": {
-        "path": ".demo/notes/10k-organism-render-notes.md"
-      }
-    },
-    {
-      "title": "Organism Test - screen.getByText() & getByLabelText()",
-      "description": "Show text and label queries in organism test.",
-      "steps": [
-        {
-          "action": "selection",
-          "path": "tests/components/organisms/UserProfileCard.test.tsx",
-          "position": "27:27",
-          "highlightWholeLine": true
-        },
-        {
-          "action": "selection",
-          "path": "tests/components/organisms/UserProfileCard.test.tsx",
-          "position": "49:50",
-          "highlightWholeLine": true
-        }
-      ],
-      "notes": {
-        "path": ".demo/notes/10l-organism-queries-notes.md"
-      }
-    },
-    {
-      "title": "Organism Test - screen.getByRole() & getByTestId()",
-      "description": "Show role and testid queries in organism test.",
-      "steps": [
-        {
-          "action": "selection",
-          "path": "tests/components/organisms/UserProfileCard.test.tsx",
-          "position": "82:82",
-          "highlightWholeLine": true
-        },
-        {
-          "action": "selection",
-          "path": "tests/components/organisms/UserProfileCard.test.tsx",
-          "position": "131:131",
-          "highlightWholeLine": true
-        }
-      ],
-      "notes": {
-        "path": ".demo/notes/10m-organism-getByRole-notes.md"
-      }
-    },
-    {
-      "title": "Organism Test - fireEvent interactions",
-      "description": "Show fireEvent simulating search interactions.",
-      "steps": [
-        {
-          "action": "selection",
-          "path": "tests/components/organisms/UserProfileCard.test.tsx",
-          "position": "89:90",
-          "highlightWholeLine": true
-        }
-      ],
-      "notes": {
-        "path": ".demo/notes/10n-organism-fireEvent-notes.md"
-      }
-    },
-    {
-      "title": "Organism Test - expect() assertions",
-      "description": "Show various expect assertions in organism test.",
-      "steps": [
-        {
-          "action": "selection",
-          "path": "tests/components/organisms/UserProfileCard.test.tsx",
-          "position": "92:94",
-          "highlightWholeLine": true
-        },
-        {
-          "action": "selection",
-          "path": "tests/components/organisms/UserProfileCard.test.tsx",
-          "position": "122:123",
-          "highlightWholeLine": true
-        }
-      ],
-      "notes": {
-        "path": ".demo/notes/10o-organism-expect-notes.md"
-      }
-    },
-    {
-      "title": "Organism Test - console.log()",
-      "description": "Show logging in organism tests.",
-      "steps": [
-        {
-          "action": "selection",
-          "path": "tests/components/organisms/UserProfileCard.test.tsx",
-          "position": "14:15",
-          "highlightWholeLine": true
-        },
-        {
-          "action": "selection",
-          "path": "tests/components/organisms/UserProfileCard.test.tsx",
-          "position": "25:25",
-          "highlightWholeLine": true
-        },
-        {
-          "action": "selection",
-          "path": "tests/components/organisms/UserProfileCard.test.tsx",
-          "position": "28:28",
-          "highlightWholeLine": true
-        }
-      ],
-      "notes": {
-        "path": ".demo/notes/10p-organism-logging-notes.md"
       }
     },
     {

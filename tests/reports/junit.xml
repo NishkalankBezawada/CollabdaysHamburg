@@ -1,196 +1,87 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites name="vitest tests" tests="27" failures="0" errors="0" time="8.955">
-    <testsuite name="tests/components/atoms/SpfxVitest.test.tsx" timestamp="2026-06-25T13:22:37.963Z" hostname="X-F3C9R824443GT" tests="6" failures="0" errors="0" skipped="0" time="0.1702621">
-        <testcase classname="tests/components/atoms/SpfxVitest.test.tsx" name="SpfxVitest component (Atom) &gt; renders user display name and description" time="0.0409526">
-            <system-out>
-  → Testing: Does it show the user&apos;s name and description?
-  ✓ User name &apos;Test User&apos; and description rendered correctly
-
-            </system-out>
-        </testcase>
-        <testcase classname="tests/components/atoms/SpfxVitest.test.tsx" name="SpfxVitest component (Atom) &gt; renders environment message" time="0.0077421">
-            <system-out>
-  → Testing: Does it display the environment message?
-  ✓ Environment message &apos;Test environment&apos; is visible
-
-            </system-out>
-        </testcase>
-        <testcase classname="tests/components/atoms/SpfxVitest.test.tsx" name="SpfxVitest component (Atom) &gt; shows dark image when isDarkTheme is true" time="0.0686547">
-            <system-out>
-  → Testing: Does dark theme show the dark welcome image?
-  ✓ Dark theme image (welcome-dark) is displayed
-
-            </system-out>
-        </testcase>
-        <testcase classname="tests/components/atoms/SpfxVitest.test.tsx" name="SpfxVitest component (Atom) &gt; shows light image when isDarkTheme is false" time="0.0169853">
-            <system-out>
-  → Testing: Does light theme show the light welcome image?
-  ✓ Light theme image (welcome-light) is displayed
-
-            </system-out>
-        </testcase>
-        <testcase classname="tests/components/atoms/SpfxVitest.test.tsx" name="SpfxVitest component (Atom) &gt; applies Teams style when hasTeamsContext is true" time="0.0114484">
-            <system-out>
-  → Testing: Does Teams context apply special CSS class?
-  ✓ Teams CSS class is applied to the section
-
-            </system-out>
-        </testcase>
-        <testcase classname="tests/components/atoms/SpfxVitest.test.tsx" name="SpfxVitest component (Atom) &gt; renders all documentation links" time="0.0215373">
-            <system-out>
-  → Testing: Are all 7+ documentation links rendered?
-  ✓ Found 7 documentation links (expected &gt;= 7)
-
-            </system-out>
-        </testcase>
-    </testsuite>
-    <testsuite name="tests/components/organisms/UserProfileCard.test.tsx" timestamp="2026-06-25T13:22:37.975Z" hostname="X-F3C9R824443GT" tests="12" failures="0" errors="0" skipped="0" time="0.2262765">
-        <testcase classname="tests/components/organisms/UserProfileCard.test.tsx" name="UserProfileCard component (Organism) &gt; renders user display name" time="0.0423829">
+<testsuites name="vitest tests" tests="12" failures="0" errors="0" time="52.228">
+    <testsuite name="tests/components/organisms/UserProfileCard.test.tsx" timestamp="2026-06-26T14:44:15.693Z" hostname="X-F3C9R824443GT" tests="12" failures="0" errors="0" skipped="0" time="0.1777785">
+        <testcase classname="tests/components/organisms/UserProfileCard.test.tsx" name="UserProfileCard component (Organism) &gt; renders user display name" time="0.0377526">
             <system-out>
   → Testing: Does it show the user&apos;s full name?
-  ✓ Display name &apos;Jane Doe&apos; is visible
+ Display name &apos;Jane Doe&apos; is visible
 
             </system-out>
         </testcase>
-        <testcase classname="tests/components/organisms/UserProfileCard.test.tsx" name="UserProfileCard component (Organism) &gt; renders user email" time="0.0070428">
+        <testcase classname="tests/components/organisms/UserProfileCard.test.tsx" name="UserProfileCard component (Organism) &gt; renders user email" time="0.0036135">
             <system-out>
   → Testing: Does it show the user&apos;s email?
-  ✓ Email &apos;jane.doe@contoso.com&apos; is visible
+ Email &apos;jane.doe@contoso.com&apos; is visible
 
             </system-out>
         </testcase>
-        <testcase classname="tests/components/organisms/UserProfileCard.test.tsx" name="UserProfileCard component (Organism) &gt; renders user role" time="0.0049408">
+        <testcase classname="tests/components/organisms/UserProfileCard.test.tsx" name="UserProfileCard component (Organism) &gt; renders user role" time="0.0058">
             <system-out>
   → Testing: Does it show the user&apos;s role?
-  ✓ Role &apos;SharePoint Developer&apos; is visible
+ Role &apos;SharePoint Developer&apos; is visible
 
             </system-out>
         </testcase>
-        <testcase classname="tests/components/organisms/UserProfileCard.test.tsx" name="UserProfileCard component (Organism) &gt; shows auto-generated initials when no avatarInitials provided" time="0.0047061">
+        <testcase classname="tests/components/organisms/UserProfileCard.test.tsx" name="UserProfileCard component (Organism) &gt; shows auto-generated initials when no avatarInitials provided" time="0.0106453">
             <system-out>
   → Testing: Does it generate initials from the name?
-  ✓ Auto-generated initials &apos;JD&apos; from &apos;Jane Doe&apos;
+ Auto-generated initials &apos;JD&apos; from &apos;Jane Doe&apos;
 
             </system-out>
         </testcase>
-        <testcase classname="tests/components/organisms/UserProfileCard.test.tsx" name="UserProfileCard component (Organism) &gt; shows custom initials when avatarInitials provided" time="0.0049248">
+        <testcase classname="tests/components/organisms/UserProfileCard.test.tsx" name="UserProfileCard component (Organism) &gt; shows custom initials when avatarInitials provided" time="0.0077782">
             <system-out>
   → Testing: Can we override initials with custom text?
-  ✓ Custom initials &apos;X&apos; displayed instead of auto-generated
+ Custom initials &apos;X&apos; displayed instead of auto-generated
 
             </system-out>
         </testcase>
-        <testcase classname="tests/components/organisms/UserProfileCard.test.tsx" name="UserProfileCard component (Organism) &gt; shows online status badge when isOnline is true" time="0.0042992">
+        <testcase classname="tests/components/organisms/UserProfileCard.test.tsx" name="UserProfileCard component (Organism) &gt; shows online status badge when isOnline is true" time="0.0030474">
             <system-out>
   → Testing: Does it show &apos;Online&apos; status indicator?
-  ✓ Online status badge is visible
+ Online status badge is visible
 
             </system-out>
         </testcase>
-        <testcase classname="tests/components/organisms/UserProfileCard.test.tsx" name="UserProfileCard component (Organism) &gt; shows offline status badge when isOnline is false" time="0.0049819">
+        <testcase classname="tests/components/organisms/UserProfileCard.test.tsx" name="UserProfileCard component (Organism) &gt; shows offline status badge when isOnline is false" time="0.0040934">
             <system-out>
   → Testing: Does it show &apos;Offline&apos; status indicator?
-  ✓ Offline status badge is visible
+ Offline status badge is visible
 
             </system-out>
         </testcase>
-        <testcase classname="tests/components/organisms/UserProfileCard.test.tsx" name="UserProfileCard component (Organism) &gt; renders the embedded SearchBox" time="0.0737873">
+        <testcase classname="tests/components/organisms/UserProfileCard.test.tsx" name="UserProfileCard component (Organism) &gt; renders the embedded SearchBox" time="0.0478824">
             <system-out>
   → Testing: Is the search box (molecule) embedded inside?
-  ✓ SearchBox rendered with &apos;Search user content...&apos; placeholder and &apos;Find&apos; button
+ SearchBox rendered with &apos;Search user content...&apos; placeholder and &apos;Find&apos; button
 
             </system-out>
         </testcase>
-        <testcase classname="tests/components/organisms/UserProfileCard.test.tsx" name="UserProfileCard component (Organism) &gt; performs a search and shows it in recent searches" time="0.0320531">
+        <testcase classname="tests/components/organisms/UserProfileCard.test.tsx" name="UserProfileCard component (Organism) &gt; performs a search and shows it in recent searches" time="0.031955">
             <system-out>
   → Testing: Does searching add to the recent searches list?
-  ✓ &apos;SPFx web parts&apos; added to recent searches and callback triggered
+ &apos;SPFx web parts&apos; added to recent searches and callback triggered
 
             </system-out>
         </testcase>
-        <testcase classname="tests/components/organisms/UserProfileCard.test.tsx" name="UserProfileCard component (Organism) &gt; displays pre-existing recent searches" time="0.0115764">
+        <testcase classname="tests/components/organisms/UserProfileCard.test.tsx" name="UserProfileCard component (Organism) &gt; displays pre-existing recent searches" time="0.0050335">
             <system-out>
   → Testing: Can we pass in existing search history?
-  ✓ Pre-existing searches &apos;React&apos;, &apos;TypeScript&apos;, &apos;Vitest&apos; all displayed
+ Pre-existing searches &apos;React&apos;, &apos;TypeScript&apos;, &apos;Vitest&apos; all displayed
 
             </system-out>
         </testcase>
-        <testcase classname="tests/components/organisms/UserProfileCard.test.tsx" name="UserProfileCard component (Organism) &gt; limits recent searches to 5 items" time="0.0260946">
+        <testcase classname="tests/components/organisms/UserProfileCard.test.tsx" name="UserProfileCard component (Organism) &gt; limits recent searches to 5 items" time="0.0110425">
             <system-out>
   → Testing: Does it cap recent searches at 5 items?
-  ✓ Recent searches capped at 5 — oldest item removed
+ Recent searches capped at 5 — oldest item removed
 
             </system-out>
         </testcase>
-        <testcase classname="tests/components/organisms/UserProfileCard.test.tsx" name="UserProfileCard component (Organism) &gt; renders the profile card container" time="0.0066091">
+        <testcase classname="tests/components/organisms/UserProfileCard.test.tsx" name="UserProfileCard component (Organism) &gt; renders the profile card container" time="0.0057998">
             <system-out>
   → Testing: Does the profile card wrapper exist?
-  ✓ Profile card container (data-testid=&apos;profile-card&apos;) found
-
-            </system-out>
-        </testcase>
-    </testsuite>
-    <testsuite name="tests/components/molecules/SearchBox.test.tsx" timestamp="2026-06-25T13:22:37.982Z" hostname="X-F3C9R824443GT" tests="9" failures="0" errors="0" skipped="0" time="0.1910212">
-        <testcase classname="tests/components/molecules/SearchBox.test.tsx" name="SearchBox component (Molecule) &gt; renders with default placeholder and button text" time="0.1051872">
-            <system-out>
-  → Testing: Does it show default placeholder &apos;Search...&apos; and button &apos;Search&apos;?
-  ✓ Default placeholder and button text rendered
-
-            </system-out>
-        </testcase>
-        <testcase classname="tests/components/molecules/SearchBox.test.tsx" name="SearchBox component (Molecule) &gt; renders with custom placeholder and button label" time="0.0094209">
-            <system-out>
-  → Testing: Can we customize placeholder and button text?
-  ✓ Custom placeholder &apos;Find items...&apos; and button &apos;Go&apos; rendered
-
-            </system-out>
-        </testcase>
-        <testcase classname="tests/components/molecules/SearchBox.test.tsx" name="SearchBox component (Molecule) &gt; updates input value when user types" time="0.0111764">
-            <system-out>
-  → Testing: Does typing update the input field?
-  ✓ Input value updated to &apos;hello world&apos; after typing
-
-            </system-out>
-        </testcase>
-        <testcase classname="tests/components/molecules/SearchBox.test.tsx" name="SearchBox component (Molecule) &gt; calls onSearch when button is clicked with valid input" time="0.0202571">
-            <system-out>
-  → Testing: Does clicking Search trigger the callback?
-  ✓ onSearch called with &apos;SharePoint&apos; after button click
-
-            </system-out>
-        </testcase>
-        <testcase classname="tests/components/molecules/SearchBox.test.tsx" name="SearchBox component (Molecule) &gt; calls onSearch when Enter key is pressed" time="0.0099984">
-            <system-out>
-  → Testing: Does pressing Enter trigger search?
-  ✓ onSearch called with &apos;Vitest&apos; after Enter key press
-
-            </system-out>
-        </testcase>
-        <testcase classname="tests/components/molecules/SearchBox.test.tsx" name="SearchBox component (Molecule) &gt; does NOT call onSearch when input is empty" time="0.0076857">
-            <system-out>
-  → Testing: Is the button disabled when input is empty?
-  ✓ onSearch NOT called — empty input correctly blocked
-
-            </system-out>
-        </testcase>
-        <testcase classname="tests/components/molecules/SearchBox.test.tsx" name="SearchBox component (Molecule) &gt; trims whitespace from search query" time="0.0041321">
-            <system-out>
-  → Testing: Does it trim spaces from the search text?
-  ✓ Search query trimmed from &apos;  SPFx Testing  &apos; to &apos;SPFx Testing&apos;
-
-            </system-out>
-        </testcase>
-        <testcase classname="tests/components/molecules/SearchBox.test.tsx" name="SearchBox component (Molecule) &gt; disables input and button when disabled prop is true" time="0.008144">
-            <system-out>
-  → Testing: Does disabled prop disable everything?
-  ✓ Both input and button are disabled
-
-            </system-out>
-        </testcase>
-        <testcase classname="tests/components/molecules/SearchBox.test.tsx" name="SearchBox component (Molecule) &gt; shows search count after performing searches" time="0.0122091">
-            <system-out>
-  → Testing: Does it track and show number of searches?
-  ✓ Search count shows &apos;1&apos; after first search
+ Profile card container (data-testid=&apos;profile-card&apos;) found
 
             </system-out>
         </testcase>

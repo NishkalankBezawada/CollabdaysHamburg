@@ -9,8 +9,9 @@ layout: two-cols
 
 **Solution Architect / Principal Engineer — M365 at Xenit AB**
 
-Microsoft MVP — M365 Development & SharePoint
-
+Microsoft MVP — M365 Development & SharePoint  
+PnP PowerShell Maintainer  
+PnP Core Team member
 ::right::
 
 <!-- Speaker Photo -->

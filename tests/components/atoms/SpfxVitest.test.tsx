@@ -26,14 +26,14 @@ describe("SpfxVitest component (Atom)", () => {
     expect(screen.getByText(/Well done, Test User!/)).toBeInTheDocument();
     expect(screen.getByText(/Web part property value:/)).toBeInTheDocument();
     expect(screen.getByText("Test description")).toBeInTheDocument();
-    console.log("  ✓ User name 'Test User' and description rendered correctly");
+    console.log(" User name 'Test User' and description rendered correctly");
   });
 
   it("renders environment message", () => {
     console.log("  → Testing: Does it display the environment message?");
     render(<SpfxVitest {...baseProps} />);
     expect(screen.getByText("Test environment")).toBeInTheDocument();
-    console.log("  ✓ Environment message 'Test environment' is visible");
+    console.log(" Environment message 'Test environment' is visible");
   });
 
   it("shows dark image when isDarkTheme is true", () => {
@@ -41,7 +41,7 @@ describe("SpfxVitest component (Atom)", () => {
     render(<SpfxVitest {...baseProps} isDarkTheme={true} />);
     const img = screen.getByRole("img");
     expect(img).toHaveAttribute("src", expect.stringContaining("welcome-dark"));
-    console.log("  ✓ Dark theme image (welcome-dark) is displayed");
+    console.log(" Dark theme image (welcome-dark) is displayed");
   });
 
   it("shows light image when isDarkTheme is false", () => {
@@ -49,14 +49,14 @@ describe("SpfxVitest component (Atom)", () => {
     render(<SpfxVitest {...baseProps} isDarkTheme={false} />);
     const img = screen.getByRole("img");
     expect(img).toHaveAttribute("src", expect.stringContaining("welcome-light"));
-    console.log("  ✓ Light theme image (welcome-light) is displayed");
+    console.log(" Light theme image (welcome-light) is displayed");
   });
 
   it("applies Teams style when hasTeamsContext is true", () => {
     console.log("  → Testing: Does Teams context apply special CSS class?");
     const { container } = render(<SpfxVitest {...baseProps} hasTeamsContext={true} />);
     expect(container.querySelector("section")?.className).toMatch(/teams/);
-    console.log("  ✓ Teams CSS class is applied to the section");
+    console.log(" Teams CSS class is applied to the section");
   });
 
   it("renders all documentation links", () => {
@@ -64,6 +64,6 @@ describe("SpfxVitest component (Atom)", () => {
     render(<SpfxVitest {...baseProps} />);
     const links = screen.getAllByRole("link");
     expect(links.length).toBeGreaterThanOrEqual(7);
-    console.log(`  ✓ Found ${links.length} documentation links (expected >= 7)`);
+    console.log(` Found ${links.length} documentation links (expected >= 7)`);
   });
 });
